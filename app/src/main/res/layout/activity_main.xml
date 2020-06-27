@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/myvideobackgronud"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <TextView
+        android:id="@+id/uber"
+        android:layout_width="184dp"
+        android:layout_height="104dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/rock_salt"
+        android:gravity="top"
+        android:text="@string/uber"
+        android:textAppearance="@style/uber"
+        android:textColor="#DF4848"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <ImageButton
+        android:id="@+id/Customer_button"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/or"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="92dp"
+        android:src="@drawable/happycustomer"
+        app:layout_constraintBottom_toTopOf="@+id/Driver_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uber"
+        app:layout_constraintVertical_bias="0.713">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="24.55dp"
+        android:layout_height="26dp"
+        android:layout_alignBottom="@+id/Driver_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal|top"
+        android:text="@string/or"
+        android:textAppearance="@style/or"
+        app:layout_constraintBottom_toTopOf="@+id/Driver_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Customer_button"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <ImageButton
+        android:id="@+id/Driver_button"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:src="@drawable/wroksasdriver"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uber"
+        app:layout_constraintVertical_bias="0.777">
+
+    </ImageButton>
+</androidx.constraintlayout.widget.ConstraintLayout>
